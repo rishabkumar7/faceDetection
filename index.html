@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Faced.</title>
     <script defer src="face-api.min.js"></script>
     <script defer src="script.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -16,6 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #cccc00;
         }
 
         canvas {
@@ -23,17 +25,26 @@
         }
 
         h1 {
-            font-size: 40px;
-            line-height: 30px;
-            margin: 10px 0 10px 0;
-            text-shadow: 1px 1px 5px #789;
+            color: #111;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 205px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <h1>Faced</h1>
-    <video id="video" width="720" height="560" autoplay muted></video>
+    <header>
+        <div class=head>
+            <h1>Faced.</h1>
+        </div>
+    </header>
+    <div class=video>
+        <video id="video" width="720" height="560" autoplay muted></video>
+    </div>
 </body>
 
 </html>
